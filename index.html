@@ -5,24 +5,51 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css"
+/>
   </head>
   <body>
     <div id="app">
-    <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="/src/typescript.svg" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+      <h1>🔴 Recording Starts On Page Load</h1>
+      <h4>Scroll around and then press playback recording.</h4>
+      <div class="card">
+        <button id="export" type="button">Playback Recording</button>
+      </div>
+      <p id="events" class="read-the-docs">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu justo a augue molestie vehicula. Nulla facilisi. Sed hendrerit, tellus eu mollis venenatis, urna magna semper metus, eget pulvinar ex risus in enim. Praesent varius venenatis libero vitae mollis. Donec at dignissim dui. Nunc quis ultrices risus. Phasellus sollicitudin, nulla eu imperdiet blandit, diam felis sodales mauris, eget efficitur erat neque nec massa. Phasellus ullamcorper ac est ullamcorper sollicitudin. Praesent malesuada mollis arcu. In in consequat eros. Aliquam quis libero dignissim, tempor nibh a, posuere sem. Fusce placerat odio ac lectus congue, eget pellentesque tellus ultricies. Proin tincidunt ac lacus quis vehicula.
+  
+        Cras tincidunt ornare hendrerit. Nam vitae justo pretium, consequat urna eu, ultricies tellus. Phasellus mi dolor, hendrerit in efficitur id, consectetur in elit. Mauris non vehicula tortor. Donec lacus lorem, cursus a mauris eget, posuere dapibus libero. Pellentesque aliquet vehicula elit vehicula bibendum. Suspendisse tempus a purus vel tristique. Aenean suscipit, massa vitae pretium sodales, lectus augue dictum tortor, auctor consectetur magna quam nec sapien. Cras eget finibus nisi, id pellentesque nisl. Morbi tempus risus vitae nibh suscipit viverra. Vivamus id purus dictum, posuere risus vitae, accumsan nulla. Vivamus lacinia metus sit amet nunc dapibus, sit amet tempus arcu vehicula. Sed a molestie ipsum, eu venenatis dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec in erat ac nisi viverra dictum et et orci. Donec ullamcorper pharetra maximus.
+        
+        Sed quis urna ut velit facilisis mattis. In maximus dignissim quam finibus faucibus. Maecenas enim turpis, viverra tincidunt velit ac, tincidunt consectetur sapien. In hac habitasse platea dictumst. Duis id pellentesque orci. Aliquam eu elementum libero. Phasellus tincidunt nibh turpis, sed cursus nisi ultricies vel. Duis faucibus lacus quis efficitur varius.
+        
+        Curabitur hendrerit leo sit amet blandit porta. Nam sit amet cursus ligula, id rutrum enim. Duis at lacus et tellus pretium semper vitae ac magna. Nullam interdum diam porttitor velit luctus lacinia. Pellentesque tincidunt hendrerit tortor, a volutpat eros vehicula ac. Fusce sit amet libero neque. Ut dapibus felis sit amet nulla consectetur, eget gravida erat aliquam. Nam et ultricies ante. Morbi dignissim felis sit amet turpis sodales, ac feugiat justo luctus. Quisque blandit augue ut odio gravida, consequat iaculis quam tincidunt. Nullam ornare egestas nisl, vel efficitur purus tincidunt eu. Donec vulputate ornare velit at posuere. Etiam sed auctor odio.
+        
+        Integer nisi erat, facilisis ac massa rutrum, accumsan luctus arcu. Aliquam et lorem ac erat auctor sagittis quis pellentesque arcu. Quisque neque sem, facilisis in arcu in, lobortis euismod eros. Pellentesque venenatis dui eu nulla sagittis suscipit. Nam luctus dui non magna placerat luctus. Mauris cursus ac nulla at porttitor. Vivamus tincidunt, nunc eu porta iaculis, odio ante elementum eros, eget tristique ante lacus eu massa. Etiam consequat lacus metus, sed luctus enim congue id. Quisque non dolor et dui scelerisque maximus. Curabitur faucibus, justo vitae dapibus imperdiet, eros magna cursus risus, sed ornare mi arcu condimentum dolor.    
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu justo a augue molestie vehicula. Nulla facilisi. Sed hendrerit, tellus eu mollis venenatis, urna magna semper metus, eget pulvinar ex risus in enim. Praesent varius venenatis libero vitae mollis. Donec at dignissim dui. Nunc quis ultrices risus. Phasellus sollicitudin, nulla eu imperdiet blandit, diam felis sodales mauris, eget efficitur erat neque nec massa. Phasellus ullamcorper ac est ullamcorper sollicitudin. Praesent malesuada mollis arcu. In in consequat eros. Aliquam quis libero dignissim, tempor nibh a, posuere sem. Fusce placerat odio ac lectus congue, eget pellentesque tellus ultricies. Proin tincidunt ac lacus quis vehicula.
+  
+        Cras tincidunt ornare hendrerit. Nam vitae justo pretium, consequat urna eu, ultricies tellus. Phasellus mi dolor, hendrerit in efficitur id, consectetur in elit. Mauris non vehicula tortor. Donec lacus lorem, cursus a mauris eget, posuere dapibus libero. Pellentesque aliquet vehicula elit vehicula bibendum. Suspendisse tempus a purus vel tristique. Aenean suscipit, massa vitae pretium sodales, lectus augue dictum tortor, auctor consectetur magna quam nec sapien. Cras eget finibus nisi, id pellentesque nisl. Morbi tempus risus vitae nibh suscipit viverra. Vivamus id purus dictum, posuere risus vitae, accumsan nulla. Vivamus lacinia metus sit amet nunc dapibus, sit amet tempus arcu vehicula. Sed a molestie ipsum, eu venenatis dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec in erat ac nisi viverra dictum et et orci. Donec ullamcorper pharetra maximus.
+        
+        Sed quis urna ut velit facilisis mattis. In maximus dignissim quam finibus faucibus. Maecenas enim turpis, viverra tincidunt velit ac, tincidunt consectetur sapien. In hac habitasse platea dictumst. Duis id pellentesque orci. Aliquam eu elementum libero. Phasellus tincidunt nibh turpis, sed cursus nisi ultricies vel. Duis faucibus lacus quis efficitur varius.
+        
+        Curabitur hendrerit leo sit amet blandit porta. Nam sit amet cursus ligula, id rutrum enim. Duis at lacus et tellus pretium semper vitae ac magna. Nullam interdum diam porttitor velit luctus lacinia. Pellentesque tincidunt hendrerit tortor, a volutpat eros vehicula ac. Fusce sit amet libero neque. Ut dapibus felis sit amet nulla consectetur, eget gravida erat aliquam. Nam et ultricies ante. Morbi dignissim felis sit amet turpis sodales, ac feugiat justo luctus. Quisque blandit augue ut odio gravida, consequat iaculis quam tincidunt. Nullam ornare egestas nisl, vel efficitur purus tincidunt eu. Donec vulputate ornare velit at posuere. Etiam sed auctor odio.
+        <br>
+        Integer nisi erat, facilisis ac massa rutrum, accumsan luctus arcu. Aliquam et lorem ac erat auctor sagittis quis pellentesque arcu. Quisque neque sem, facilisis in arcu in, lobortis euismod eros. Pellentesque venenatis dui eu nulla sagittis suscipit. Nam luctus dui non magna placerat luctus. Mauris cursus ac nulla at porttitor. Vivamus tincidunt, nunc eu porta iaculis, odio ante elementum eros, eget tristique ante lacus eu massa. Etiam consequat lacus metus, sed luctus enim congue id. Quisque non dolor et dui scelerisque maximus. Curabitur faucibus, justo vitae dapibus imperdiet, eros magna cursus risus, sed ornare mi arcu condimentum dolor.    
+  
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu justo a augue molestie vehicula. Nulla facilisi. Sed hendrerit, tellus eu mollis venenatis, urna magna semper metus, eget pulvinar ex risus in enim. Praesent varius venenatis libero vitae mollis. Donec at dignissim dui. Nunc quis ultrices risus. Phasellus sollicitudin, nulla eu imperdiet blandit, diam felis sodales mauris, eget efficitur erat neque nec massa. Phasellus ullamcorper ac est ullamcorper sollicitudin. Praesent malesuada mollis arcu. In in consequat eros. Aliquam quis libero dignissim, tempor nibh a, posuere sem. Fusce placerat odio ac lectus congue, eget pellentesque tellus ultricies. Proin tincidunt ac lacus quis vehicula.
+  
+        Cras tincidunt ornare hendrerit. Nam vitae justo pretium, consequat urna eu, ultricies tellus. Phasellus mi dolor, hendrerit in efficitur id, consectetur in elit. Mauris non vehicula tortor. Donec lacus lorem, cursus a mauris eget, posuere dapibus libero. Pellentesque aliquet vehicula elit vehicula bibendum. Suspendisse tempus a purus vel tristique. Aenean suscipit, massa vitae pretium sodales, lectus augue dictum tortor, auctor consectetur magna quam nec sapien. Cras eget finibus nisi, id pellentesque nisl. Morbi tempus risus vitae nibh suscipit viverra. Vivamus id purus dictum, posuere risus vitae, accumsan nulla. Vivamus lacinia metus sit amet nunc dapibus, sit amet tempus arcu vehicula. Sed a molestie ipsum, eu venenatis dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec in erat ac nisi viverra dictum et et orci. Donec ullamcorper pharetra maximus.
+        
+        Sed quis urna ut velit facilisis mattis. In maximus dignissim quam finibus faucibus. Maecenas enim turpis, viverra tincidunt velit ac, tincidunt consectetur sapien. In hac habitasse platea dictumst. Duis id pellentesque orci. Aliquam eu elementum libero. Phasellus tincidunt nibh turpis, sed cursus nisi ultricies vel. Duis faucibus lacus quis efficitur varius.
+        
+        Curabitur hendrerit leo sit amet blandit porta. Nam sit amet cursus ligula, id rutrum enim. Duis at lacus et tellus pretium semper vitae ac magna. Nullam interdum diam porttitor velit luctus lacinia. Pellentesque tincidunt hendrerit tortor, a volutpat eros vehicula ac. Fusce sit amet libero neque. Ut dapibus felis sit amet nulla consectetur, eget gravida erat aliquam. Nam et ultricies ante. Morbi dignissim felis sit amet turpis sodales, ac feugiat justo luctus. Quisque blandit augue ut odio gravida, consequat iaculis quam tincidunt. Nullam ornare egestas nisl, vel efficitur purus tincidunt eu. Donec vulputate ornare velit at posuere. Etiam sed auctor odio.
+        
+        Integer nisi erat, facilisis ac massa rutrum, accumsan luctus arcu. Aliquam et lorem ac erat auctor sagittis quis pellentesque arcu. Quisque neque sem, facilisis in arcu in, lobortis euismod eros. Pellentesque venenatis dui eu nulla sagittis suscipit. Nam luctus dui non magna placerat luctus. Mauris cursus ac nulla at porttitor. Vivamus tincidunt, nunc eu porta iaculis, odio ante elementum eros, eget tristique ante lacus eu massa. Etiam consequat lacus metus, sed luctus enim congue id. Quisque non dolor et dui scelerisque maximus. Curabitur faucibus, justo vitae dapibus imperdiet, eros magna cursus risus, sed ornare mi arcu condimentum dolor.    
+  
+      </p>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
+    <div>
 </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
